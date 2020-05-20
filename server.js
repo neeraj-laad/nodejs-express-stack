@@ -57,7 +57,7 @@ const pino = require('pino')({
 app.use(require('pino-http')({logger: pino}));
 
 // Register the user's app.
-const basePath = __dirname + '/user-app/';
+const basePath = __dirname + '/simple/';
 
 function getEntryPoint() {
     let rawPackage = fs.readFileSync(basePath + 'package.json');
